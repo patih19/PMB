@@ -241,3 +241,6 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /Akademik/
+
+# ignore a single file
+Web.Config
