@@ -243,4 +243,4 @@ ModelManifest.xml
 /Akademik/
 
 # ignore a single file
-Web.Config
+*.Config
