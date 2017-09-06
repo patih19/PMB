@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="smuntidar.user.User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/boots.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/keuangan.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            color: #FFFFFF;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!-- ===========================  Header ============================== -->
+        <div style="background-color: #6F5499">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-lg-12 col-md-12">
+                        <span class="style2">SM-UNTIDAR, Pendaftaran Online Seleksi Masuk Universitas Tidar
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <!-- ============== Footer ============ -->
+        <div style="background-color: #DDDDDD">
+            <div class="container top-buffer">
+                <div class="row">
+                    <div class=" col-lg-12 col-md-12 top-buffer">
+                        <span style="font-size: small; font-style: italic; color: #666666">&copy; Copyright
+                            2014, Puskominfo Untidar </span>
+                    </div>
+                </div>
+            </div>
+            <br />
+        </div>
+        <!-- ----- End Footer -------- -->
+    </div>
+    </form>
+</body>
+</html>
+
+
