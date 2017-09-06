@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F5AF5FE-7908-4DDF-820B-A18103E159C9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Survei</RootNamespace>
+    <AssemblyName>Survei</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\App.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\login.css" />
+    <Content Include="fonts\fontawesome-webfonte0a5.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\avatars\avatar-1.jpg" />
+    <Content Include="img\avatars\avatar-2.jpg" />
+    <Content Include="img\avatars\avatar-large-1.jpg" />
+    <Content Include="img\layout\sidebar-bg.png" />
+    <Content Include="img\logos\logo-login.png" />
+    <Content Include="img\logos\logo.png" />
+    <Content Include="js\App.js" />
+    <Content Include="js\demos\buttons.js" />
+    <Content Include="js\demos\calendar.js" />
+    <Content Include="js\demos\charts\flot\area.js" />
+    <Content Include="js\demos\charts\flot\donut.js" />
+    <Content Include="js\demos\charts\flot\horizontal.js" />
+    <Content Include="js\demos\charts\flot\line.js" />
+    <Content Include="js\demos\charts\flot\pie.js" />
+    <Content Include="js\demos\charts\flot\scatter.js" />
+    <Content Include="js\demos\charts\flot\stacked-area.js" />
+    <Content Include="js\demos\charts\flot\stacked-horizontal.js" />
+    <Content Include="js\demos\charts\flot\stacked-vertical.js" />
+    <Content Include="js\demos\charts\flot\vertical.js" />
+    <Content Include="js\demos\charts\morris\area.js" />
+    <Content Include="js\demos\charts\morris\bar.js" />
+    <Content Include="js\demos\charts\morris\donut.js" />
+    <Content Include="js\demos\charts\morris\line.js" />
+    <Content Include="js\demos\dashboard.js" />
+    <Content Include="js\demos\form-extended.js" />
+    <Content Include="js\demos\popups.js" />
+    <Content Include="js\demos\pricing.js" />
+    <Content Include="js\demos\sliders.js" />
+    <Content Include="js\libs\bootstrap.min.js" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="js\libs\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="js\libs\css\ui-lightness\jquery-ui-1.9.2.custom.css" />
+    <Content Include="js\libs\jquery-1.11.2.js" />
+    <Content Include="js\libs\jquery-1.11.2.min.js" />
+    <Content Include="js\libs\jquery-1.9.1.min.js" />
+    <Content Include="js\libs\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="js\libs\raphael-2.1.2.min.js" />
+    <Content Include="js\libs\underscore.min.html" />
+    <Content Include="js\Login.js" />
+    <Content Include="js\plugins\autosize\jquery.autosize.min.js" />
+    <Content Include="js\plugins\chosen\chosen-sprite.html" />
+    <Content Include="js\plugins\datatables\dataTables.bootstrap.min.css" />
+    <Content Include="js\plugins\datatables\dataTables.bootstrap.min.js" />
+    <Content Include="js\plugins\datatables\DT_bootstrap.js" />
+    <Content Include="js\plugins\datatables\img\sort_asc.png" />
+    <Content Include="js\plugins\datatables\img\sort_asc_disabled.png" />
+    <Content Include="js\plugins\datatables\img\sort_both.png" />
+    <Content Include="js\plugins\datatables\img\sort_desc.png" />
+    <Content Include="js\plugins\datatables\img\sort_desc_disabled.png" />
+    <Content Include="js\plugins\datatables\jquery.dataTables.min.js" />
+    <Content Include="js\plugins\datepicker\bootstrap-datepicker.js" />
+    <Content Include="js\plugins\datepicker\datepicker.css" />
+    <Content Include="js\plugins\fileupload\bootstrap-fileupload.css" />
+    <Content Include="js\plugins\fileupload\bootstrap-fileupload.js" />
+    <Content Include="js\plugins\flot\jquery.flot.js" />
+    <Content Include="js\plugins\flot\jquery.flot.orderBars.js" />
+    <Content Include="js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="js\plugins\flot\jquery.flot.stack.js" />
+    <Content Include="js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="js\plugins\fullcalendar\fullcalendar.css" />
+    <Content Include="js\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="js\plugins\howl\howl.js" />
+    <Content Include="js\plugins\icheck\jquery.icheck.js" />
+    <Content Include="js\plugins\icheck\jquery.icheck.min.js" />
+    <Content Include="js\plugins\icheck\skins\minimal\blue%402x.png" />
+    <Content Include="js\plugins\icheck\skins\minimal\blue.css" />
+    <Content Include="js\plugins\icheck\skins\minimal\blue.png" />
+    <Content Include="js\plugins\magnific\jquery.magnific-popup.min.js" />
+    <Content Include="js\plugins\magnific\magnific-popup.css" />
+    <Content Include="js\plugins\morris\morris.min.js" />
+    <Content Include="js\plugins\parsley\parsley.js" />
+    <Content Include="js\plugins\select2\select2-spinner.gif" />
+    <Content Include="js\plugins\select2\select2.css" />
+    <Content Include="js\plugins\select2\select2.js" />
+    <Content Include="js\plugins\select2\select2.png" />
+    <Content Include="js\plugins\select2\select2x2.png" />
+    <Content Include="js\plugins\simplecolorpicker\jquery.simplecolorpicker.css" />
+    <Content Include="js\plugins\simplecolorpicker\jquery.simplecolorpicker.js" />
+    <Content Include="js\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="js\plugins\tableCheckable\jquery.tableCheckable.js" />
+    <Content Include="js\plugins\textarea-counter\jquery.textarea-counter.js" />
+    <Content Include="js\plugins\timepicker\bootstrap-timepicker.css" />
+    <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.1.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\bootstrap-datetimepicker-build.less" />
+    <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="Content\bootstrap-theme.min.css.map" />
+    <None Include="Content\bootstrap.css.map" />
+    <None Include="Content\bootstrap.min.css.map" />
+    <None Include="Content\bootstrap\alerts.less" />
+    <None Include="Content\bootstrap\badges.less" />
+    <None Include="Content\bootstrap\bootstrap.less" />
+    <None Include="Content\bootstrap\breadcrumbs.less" />
+    <None Include="Content\bootstrap\button-groups.less" />
+    <None Include="Content\bootstrap\buttons.less" />
+    <None Include="Content\bootstrap\carousel.less" />
+    <None Include="Content\bootstrap\close.less" />
+    <None Include="Content\bootstrap\code.less" />
+    <None Include="Content\bootstrap\component-animations.less" />
+    <None Include="Content\bootstrap\dropdowns.less" />
+    <None Include="Content\bootstrap\forms.less" />
+    <None Include="Content\bootstrap\glyphicons.less" />
+    <None Include="Content\bootstrap\grid.less" />
+    <None Include="Content\bootstrap\input-groups.less" />
+    <None Include="Content\bootstrap\jumbotron.less" />
+    <None Include="Content\bootstrap\labels.less" />
+    <None Include="Content\bootstrap\list-group.less" />
+    <None Include="Content\bootstrap\media.less" />
+    <None Include="Content\bootstrap\mixins.less" />
+    <None Include="Content\bootstrap\mixins\alerts.less" />
+    <None Include="Content\bootstrap\mixins\background-variant.less" />
+    <None Include="Content\bootstrap\mixins\border-radius.less" />
+    <None Include="Content\bootstrap\mixins\buttons.less" />
+    <None Include="Content\bootstrap\mixins\center-block.less" />
+    <None Include="Content\bootstrap\mixins\clearfix.less" />
+    <None Include="Content\bootstrap\mixins\forms.less" />
+    <None Include="Content\bootstrap\mixins\gradients.less" />
+    <None Include="Content\bootstrap\mixins\grid-framework.less" />
+    <None Include="Content\bootstrap\mixins\grid.less" />
+    <None Include="Content\bootstrap\mixins\hide-text.less" />
+    <None Include="Content\bootstrap\mixins\image.less" />
+    <None Include="Content\bootstrap\mixins\labels.less" />
+    <None Include="Content\bootstrap\mixins\list-group.less" />
+    <None Include="Content\bootstrap\mixins\nav-divider.less" />
+    <None Include="Content\bootstrap\mixins\nav-vertical-align.less" />
+    <None Include="Content\bootstrap\mixins\opacity.less" />
+    <None Include="Content\bootstrap\mixins\pagination.less" />
+    <None Include="Content\bootstrap\mixins\panels.less" />
+    <None Include="Content\bootstrap\mixins\progress-bar.less" />
+    <None Include="Content\bootstrap\mixins\reset-filter.less" />
+    <None Include="Content\bootstrap\mixins\reset-text.less" />
+    <None Include="Content\bootstrap\mixins\resize.less" />
+    <None Include="Content\bootstrap\mixins\responsive-visibility.less" />
+    <None Include="Content\bootstrap\mixins\size.less" />
+    <None Include="Content\bootstrap\mixins\tab-focus.less" />
+    <None Include="Content\bootstrap\mixins\table-row.less" />
+    <None Include="Content\bootstrap\mixins\text-emphasis.less" />
+    <None Include="Content\bootstrap\mixins\text-overflow.less" />
+    <None Include="Content\bootstrap\mixins\vendor-prefixes.less" />
+    <None Include="Content\bootstrap\modals.less" />
+    <None Include="Content\bootstrap\navbar.less" />
+    <None Include="Content\bootstrap\navs.less" />
+    <None Include="Content\bootstrap\normalize.less" />
+    <None Include="Content\bootstrap\pager.less" />
+    <None Include="Content\bootstrap\pagination.less" />
+    <None Include="Content\bootstrap\panels.less" />
+    <None Include="Content\bootstrap\popovers.less" />
+    <None Include="Content\bootstrap\print.less" />
+    <None Include="Content\bootstrap\progress-bars.less" />
+    <None Include="Content\bootstrap\responsive-embed.less" />
+    <None Include="Content\bootstrap\responsive-utilities.less" />
+    <None Include="Content\bootstrap\scaffolding.less" />
+    <None Include="Content\bootstrap\tables.less" />
+    <None Include="Content\bootstrap\theme.less" />
+    <None Include="Content\bootstrap\thumbnails.less" />
+    <None Include="Content\bootstrap\tooltip.less" />
+    <None Include="Content\bootstrap\type.less" />
+    <None Include="Content\bootstrap\utilities.less" />
+    <None Include="Content\bootstrap\variables.less" />
+    <None Include="Content\bootstrap\wells.less" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Content\_bootstrap-datetimepicker.less" />
+    <None Include="css\bootstrap.css.map" />
+    <None Include="fonts\fontawesome-webfontd41d.eot" />
+    <None Include="fonts\fontawesome-webfonte0a5.eot" />
+    <None Include="fonts\fontawesome-webfonte0a5.ttf" />
+    <None Include="fonts\fontawesome-webfonte0a5.woff" />
+    <None Include="fonts\fontawesome-webfonte0a5.woff2" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="fonts\glyphicons-halflings-regulard41d.eot" />
+    <None Include="Scripts\jquery-3.1.1.min.map" />
+    <None Include="Scripts\jquery-3.1.1.slim.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>15136</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

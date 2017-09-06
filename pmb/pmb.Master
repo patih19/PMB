@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pmb.master.cs" Inherits="pmb.pmb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <link href="~/css/boots.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/keuangan.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            color: #FFFFFF;
+            font-size : 16px;
+        }
+        .style2
+        {
+            color: #FFFFFF;
+            font-size : 20px;
+        }
+         .style3
+        {
+            color: #FFFFFF;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!-- ===========================  Header ============================== -->
+        <div style="background-color: #00b200">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-lg-12 col-md-12">
+                        <h3 class="style1 top-atas">
+                            SISTEM INFORMASI PEMERIMAAN MAHASISWA BARU</h3>
+                        <p class="style2">
+                            UNIVERSITAS TIDAR</p>
+                        <!-- ----------------------- Marque ------------------------- -->
+                        <div style=" background-color: #00b200;">
+                            <marquee direction="left"><div class="style3">Sistem Informasi SM-UNTIDAR & UM-UNTIDAR Tahun 2015 Dalam Proses Uji Coba ... </div></marquee>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <!-- ====================== ISI ====================== -->
+        </asp:ContentPlaceHolder>
+        <!-- ===========================  Footer ================================ -->
+        <div style="background-color:#333333">
+            <div class="container top-buffer">
+                <div class="row">
+                    <div class=" col-lg-12 col-md-12 top-buffer">
+                        <span style="font-size: small; font-style: italic; color: White"> &copy; Copyright 2014, Puskominfo Untidar
+                        </span> 
+                    </div>
+                </div>
+            </div>
+            <br />
+        </div> <!-- ----- End Footer -------- -->
+    </div>
+    </form>
+</body>
+</html>

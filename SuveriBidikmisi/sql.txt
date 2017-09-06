@@ -1,0 +1,70 @@
+alter proc spGetEmployees
+@DisplayLength int,
+@DisplayStart int,
+@SortCol int,
+@SortDir nvarchar(10),
+@Search nvarchar(255) = NULL
+as
+begin
+    Declare @FirstRec int, @LastRec int
+    Set @FirstRec = @DisplayStart;
+    Set @LastRec = @DisplayStart + @DisplayLength;
+   
+    With CTE_Employees as
+    (
+		Select ROW_NUMBER() over (order by
+        
+        case when (@SortCol = 0 and @SortDir='asc')
+             then npm
+        end asc,
+        case when (@SortCol = 0 and @SortDir='desc')
+             then npm
+        end desc,
+        
+		case when (@SortCol = 1 and @SortDir='asc')
+             then nama
+        end asc,
+        case when (@SortCol = 1 and @SortDir='desc')
+            then nama
+        end desc,
+
+        case when (@SortCol = 3 and @SortDir='asc')
+            then prog_study
+        end asc,
+        case when (@SortCol = 3 and @SortDir='desc')
+            then prog_study
+        end desc,
+		
+		case when (@SortCol = 4 and @SortDir='asc')
+            then gelombang
+        end asc,
+        case when (@SortCol = 4 and @SortDir='desc')
+            then gelombang
+        end desc)
+		as RowNum,
+        COUNT(*) over() as TotalCount,
+        npm,
+        nama,
+        gender,
+        prog_study,
+		gelombang,
+        poto,
+		thn_angkatan
+        FROM bak_mahasiswa INNER JOIN
+				bak_prog_study ON bak_mahasiswa.id_prog_study = bak_prog_study.id_prog_study
+		WHERE   (bak_mahasiswa.bdk = 1) 
+		AND (@Search IS NULL
+											Or npm like '%' + @Search + '%'
+											Or nama like '%' + @Search + '%'
+											Or prog_study like '%' + @Search + '%'
+											Or gelombang like '%' + @Search + '%') 
+				AND (bak_mahasiswa.thn_angkatan =
+				(SELECT TOP (1) thn_angkatan
+				FROM bak_mahasiswa AS bak_mahasiswa_1
+				GROUP BY thn_angkatan
+				ORDER BY thn_angkatan DESC)) 
+    )
+    Select *
+    from CTE_Employees
+    where RowNum > @FirstRec and RowNum <= @LastRec
+end
